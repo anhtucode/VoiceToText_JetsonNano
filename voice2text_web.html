@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice2Text Jetson Nano</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07111f;
+      --card: rgba(15, 29, 48, 0.88);
+      --line: rgba(148, 163, 184, 0.18);
+      --text: #e5edf7;
+      --muted: #93a4ba;
+      --cyan: #38bdf8;
+      --cyan-2: #0891b2;
+      --green: #34d399;
+      --red: #fb7185;
+      --amber: #fbbf24;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(14, 165, 233, 0.16), transparent 34rem),
+        radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1), transparent 30rem),
+        var(--bg);
+      padding: 38px 18px;
+    }
+
+    .app { width: min(920px, 100%); margin: 0 auto; }
+
+    header { margin-bottom: 24px; }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--cyan);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.05; }
+    .subtitle { margin: 12px 0 0; color: var(--muted); line-height: 1.6; }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--card);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(14px);
+      padding: clamp(18px, 4vw, 30px);
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .status-label { color: var(--muted); font-size: 0.9rem; margin-bottom: 5px; }
+    .status-value { display: flex; align-items: center; gap: 9px; font-weight: 700; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 16px currentColor; }
+    .dot.ready { background: var(--green); }
+    .dot.error { background: var(--red); }
+
+    .settings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      padding: 22px 0 0;
+    }
+    .setting label { display: block; font-weight: 750; margin-bottom: 6px; }
+    .setting small { display: block; color: var(--muted); margin: 7px 0 0; line-height: 1.45; }
+    select {
+      width: 100%;
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 13px 42px 13px 15px;
+      color: var(--text);
+      background:
+        linear-gradient(45deg, transparent 50%, var(--cyan) 50%) calc(100% - 20px) 53% / 6px 6px no-repeat,
+        linear-gradient(135deg, var(--cyan) 50%, transparent 50%) calc(100% - 14px) 53% / 6px 6px no-repeat,
+        #10233b;
+      font: inherit;
+      cursor: pointer;
+    }
+    select:disabled { opacity: .48; cursor: wait; }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    button {
+      appearance: none;
+      border: 1px solid transparent;
+      border-radius: 14px;
+      padding: 14px 17px;
+      color: #f8fafc;
+      background: #1e324d;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+      transition: transform 150ms ease, opacity 150ms ease, border-color 150ms ease;
+    }
+    button:hover:not(:disabled) { transform: translateY(-2px); border-color: rgba(255,255,255,.2); }
+    button:disabled { opacity: 0.38; cursor: not-allowed; }
+    .primary { background: linear-gradient(135deg, var(--cyan-2), #2563eb); }
+    .record { background: linear-gradient(135deg, #e11d48, #be123c); }
+    .stop { background: #3b2632; border-color: rgba(251, 113, 133, 0.28); }
+    .transcribe { grid-column: 1 / -1; background: linear-gradient(135deg, #059669, #047857); }
+
+    .recording-state {
+      min-height: 28px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .pulse {
+      display: none;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--red);
+      animation: pulse 1.2s infinite;
+    }
+    .recording .pulse { display: inline-block; }
+    .recording #recordingText { color: #fecdd3; }
+    @keyframes pulse { 50% { box-shadow: 0 0 0 8px rgba(251, 113, 133, 0); } 0% { box-shadow: 0 0 0 0 rgba(251, 113, 133, .4); } }
+
+    audio { width: 100%; margin-top: 8px; }
+
+    .result-card { margin-top: 20px; }
+    .result-head { display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+    h2 { font-size: 1rem; margin: 0; }
+    #result {
+      min-height: 150px;
+      margin: 16px 0 0;
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(2, 8, 23, 0.56);
+      color: #dbeafe;
+      white-space: pre-wrap;
+      line-height: 1.75;
+      font-family: inherit;
+    }
+    .hint { color: var(--muted); font-size: 0.83rem; }
+    .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,.25); border-top-color: white; border-radius: 50%; animation: spin .8s linear infinite; vertical-align: -2px; margin-right: 7px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 600px) {
+      body { padding-top: 24px; }
+      .status-row { align-items: flex-start; flex-direction: column; }
+      .settings-grid { grid-template-columns: 1fr; }
+      .controls { grid-template-columns: 1fr; }
+      .transcribe { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">Jetson Nano · Vietnamese ASR</p>
+      <h1>Voice to Text</h1>
+      <p class="subtitle">Ghi âm trực tiếp, khử nhiễu, nhận dạng tiếng Việt và phân biệt người nói.</p>
+    </header>
+
+    <section class="card">
+      <div class="status-row">
+        <div>
+          <div class="status-label">Trạng thái hệ thống</div>
+          <div class="status-value"><span id="statusDot" class="dot"></span><span id="statusText">Chưa khởi động model</span></div>
+        </div>
+        <button id="startModel" class="primary">Khởi động model</button>
+      </div>
+
+      <div class="settings-grid">
+        <div class="setting">
+          <label for="asrModel">Model nhận dạng giọng nói</label>
+          <select id="asrModel">
+            <option value="phowhisper">PhoWhisper</option>
+            <option value="phowhisper_finetune">PhoWhisper Fine-tune</option>
+            <option value="phowhisper_origin">PhoWhisper Origin</option>
+          </select>
+          <small>Đổi lựa chọn rồi nhấn “Nạp model đã chọn”.</small>
+        </div>
+        <div class="setting">
+          <label for="speakerCount">Số lượng speaker</label>
+          <select id="speakerCount">
+            <option value="1">1 speaker</option>
+            <option value="2" selected>2 speakers</option>
+            <option value="3">3 speakers</option>
+            <option value="4">4 speakers</option>
+            <option value="5">5 speakers</option>
+            <option value="6">6 speakers</option>
+            <option value="7">7 speakers</option>
+            <option value="8">8 speakers</option>
+            <option value="9">9 speakers</option>
+            <option value="10">10 speakers</option>
+          </select>
+          <small>Số người thực tế không vượt quá số đoạn thoại phát hiện được.</small>
+        </div>
+        <div class="setting">
+          <label for="useLlm">Chuẩn hóa bằng LLM</label>
+          <select id="useLlm">
+            <option value="false" selected>Không dùng LLM</option>
+            <option value="true">Có dùng LLM (Qwen)</option>
+          </select>
+          <small>Qwen sửa chính tả và dấu câu sau bước nhận dạng ASR.</small>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="startRecord" class="record">● Bắt đầu ghi âm</button>
+        <button id="stopRecord" class="stop" disabled>■ Kết thúc ghi âm</button>
+        <button id="transcribe" class="transcribe" disabled>Tiến hành Voice to Text</button>
+      </div>
+
+      <div id="recordingState" class="recording-state">
+        <span class="pulse"></span>
+        <span id="recordingText">Chưa có bản ghi âm.</span>
+      </div>
+      <audio id="audioPreview" controls hidden></audio>
+    </section>
+
+    <section class="card result-card">
+      <div class="result-head">
+        <h2>Kết quả nhận dạng</h2>
+        <span id="resultHint" class="hint">Kết quả từ model sẽ hiển thị tại đây</span>
+      </div>
+      <div id="result">Chưa có kết quả.</div>
+    </section>
+  </main>
+
+  <script>
+    const ui = {
+      startModel: document.querySelector('#startModel'),
+      asrModel: document.querySelector('#asrModel'),
+      speakerCount: document.querySelector('#speakerCount'),
+      useLlm: document.querySelector('#useLlm'),
+      startRecord: document.querySelector('#startRecord'),
+      stopRecord: document.querySelector('#stopRecord'),
+      transcribe: document.querySelector('#transcribe'),
+      statusDot: document.querySelector('#statusDot'),
+      statusText: document.querySelector('#statusText'),
+      recordingState: document.querySelector('#recordingState'),
+      recordingText: document.querySelector('#recordingText'),
+      audioPreview: document.querySelector('#audioPreview'),
+      result: document.querySelector('#result'),
+      resultHint: document.querySelector('#resultHint')
+    };
+
+    let modelReady = false;
+    let activeAsrModel = null;
+    let activeUseLlm = null;
+    let mediaRecorder = null;
+    let mediaStream = null;
+    let audioChunks = [];
+    let audioBlob = null;
+    let audioUrl = null;
+    let activeJobId = localStorage.getItem('voice2text_active_job');
+
+    function setModelStatus(kind, text) {
+      ui.statusDot.className = `dot ${kind || ''}`;
+      ui.statusText.textContent = text;
+    }
+
+    function selectedUseLlm() {
+      return ui.useLlm.value === 'true';
+    }
+
+    function selectedConfigLabel() {
+      const asrLabel = ui.asrModel.options[ui.asrModel.selectedIndex].text;
+      return `${asrLabel} · ${selectedUseLlm() ? 'Có LLM' : 'Không LLM'}`;
+    }
+
+    async function apiJson(url, options = {}) {
+      const response = await fetch(url, options);
+      const data = await response.json().catch(() => ({ error: 'Phản hồi server không hợp lệ.' }));
+      if (!response.ok || data.ok === false) throw new Error(data.error || `HTTP ${response.status}`);
+      return data;
+    }
+
+    async function refreshStatus() {
+      try {
+        const data = await apiJson('/api/status');
+        activeAsrModel = data.active_asr_model;
+        activeUseLlm = data.active_use_llm;
+        if (activeAsrModel) ui.asrModel.value = activeAsrModel;
+        if (typeof activeUseLlm === 'boolean') ui.useLlm.value = String(activeUseLlm);
+        modelReady = data.ready
+          && activeAsrModel === ui.asrModel.value
+          && activeUseLlm === selectedUseLlm();
+        const configLabel = selectedConfigLabel();
+        if (data.error) setModelStatus('error', data.error);
+        else if (data.busy) setModelStatus('', 'Model đang xử lý audio...');
+        else if (modelReady) setModelStatus('ready', `${configLabel} đã sẵn sàng`);
+        else setModelStatus('', 'Chưa khởi động model');
+        ui.startModel.disabled = modelReady;
+        ui.startModel.textContent = modelReady ? 'Model đã khởi động' : 'Khởi động model';
+        return data;
+      } catch (error) {
+        setModelStatus('error', `Mất kết nối: ${error.message}`);
+        return null;
+      }
+    }
+
+    function setProcessingUi(processing) {
+      ui.startModel.disabled = processing || modelReady;
+      ui.transcribe.disabled = processing || !audioBlob || !modelReady;
+      ui.startRecord.disabled = processing;
+      ui.asrModel.disabled = processing;
+      ui.speakerCount.disabled = processing;
+      ui.useLlm.disabled = processing;
+      ui.transcribe.innerHTML = processing
+        ? '<span class="spinner"></span>Đang xử lý nền'
+        : 'Tiến hành Voice to Text';
+    }
+
+    function sleep(milliseconds) {
+      return new Promise(resolve => setTimeout(resolve, milliseconds));
+    }
+
+    async function pollJob(jobId) {
+      let consecutiveErrors = 0;
+      while (true) {
+        try {
+          const job = await apiJson(`/api/jobs/${jobId}`);
+          consecutiveErrors = 0;
+          const elapsed = Math.max(0, Math.round(Date.now() / 1000 - job.created_at));
+
+          if (job.status === 'completed') {
+            ui.result.textContent = job.result || 'Không phát hiện được lời nói trong bản ghi.';
+            ui.resultHint.textContent = `Hoàn tất · ${job.speakers_requested} speaker · ${job.use_llm ? 'Có LLM' : 'Không LLM'} · ${elapsed}s`;
+            setModelStatus('ready', 'Model đã sẵn sàng');
+            localStorage.removeItem('voice2text_active_job');
+            activeJobId = null;
+            return;
+          }
+
+          if (job.status === 'failed') {
+            const jobError = new Error(job.error || 'Job xử lý thất bại.');
+            jobError.jobFailed = true;
+            throw jobError;
+          }
+
+          ui.result.textContent = `${job.progress}\n\nThời gian đã chạy: ${elapsed} giây. Bạn có thể tải lại trang; job vẫn tiếp tục trên server.`;
+          ui.resultHint.textContent = job.status === 'queued' ? 'Đang chờ' : 'Đang xử lý nền';
+          setModelStatus('', `Model đang xử lý audio · ${elapsed}s`);
+        } catch (error) {
+          consecutiveErrors += 1;
+          if (error.jobFailed || consecutiveErrors >= 5 || /Không tìm thấy job/.test(error.message)) {
+            localStorage.removeItem('voice2text_active_job');
+            activeJobId = null;
+            throw error;
+          }
+          ui.result.textContent = `Kết nối tạm thời gián đoạn, đang thử lại (${consecutiveErrors}/5)...`;
+        }
+        await sleep(2000);
+      }
+    }
+
+    async function resumeJob(jobId) {
+      activeJobId = jobId;
+      localStorage.setItem('voice2text_active_job', jobId);
+      setProcessingUi(true);
+      ui.resultHint.textContent = 'Đang khôi phục job';
+      try {
+        await pollJob(jobId);
+      } catch (error) {
+        ui.result.textContent = `Lỗi: ${error.message}`;
+        ui.resultHint.textContent = 'Xử lý thất bại';
+        setModelStatus('error', error.message);
+      } finally {
+        setProcessingUi(false);
+      }
+    }
+
+    function handleModelConfigChange() {
+      const configLabel = selectedConfigLabel();
+      modelReady = activeAsrModel === ui.asrModel.value
+        && activeUseLlm === selectedUseLlm();
+      ui.startModel.disabled = modelReady;
+      ui.startModel.textContent = modelReady ? 'Model đã khởi động' : 'Nạp model đã chọn';
+      ui.transcribe.disabled = !audioBlob || !modelReady;
+      setModelStatus(modelReady ? 'ready' : '', modelReady
+        ? `${configLabel} đã sẵn sàng`
+        : `Đã chọn ${configLabel} — cần nạp model`);
+    }
+
+    ui.asrModel.addEventListener('change', handleModelConfigChange);
+    ui.useLlm.addEventListener('change', handleModelConfigChange);
+
+    ui.startModel.addEventListener('click', async () => {
+      ui.startModel.disabled = true;
+      ui.asrModel.disabled = true;
+      ui.useLlm.disabled = true;
+      ui.startRecord.disabled = true;
+      ui.transcribe.disabled = true;
+      ui.startModel.innerHTML = '<span class="spinner"></span>Đang tải model';
+      const selectedModel = ui.asrModel.value;
+      const useLlm = selectedUseLlm();
+      const configLabel = selectedConfigLabel();
+      setModelStatus('', `Đang nạp ${configLabel}...`);
+      try {
+        await apiJson('/api/model/start', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ asr_model: selectedModel, use_llm: useLlm })
+        });
+        activeAsrModel = selectedModel;
+        activeUseLlm = useLlm;
+        modelReady = true;
+        setModelStatus('ready', `${configLabel} đã sẵn sàng`);
+      } catch (error) {
+        modelReady = false;
+        setModelStatus('error', error.message);
+        ui.startModel.disabled = false;
+      } finally {
+        ui.asrModel.disabled = false;
+        ui.useLlm.disabled = false;
+        ui.startRecord.disabled = false;
+        ui.transcribe.disabled = !audioBlob || !modelReady;
+        ui.startModel.textContent = modelReady ? 'Model đã khởi động' : 'Thử khởi động lại';
+      }
+    });
+
+    ui.startRecord.addEventListener('click', async () => {
+      if (!navigator.mediaDevices?.getUserMedia) {
+        ui.recordingText.textContent = 'Trình duyệt không cấp microphone. Hãy mở trang qua http://localhost:8000.';
+        return;
+      }
+
+      try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const mimeType = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
+          ? 'audio/webm;codecs=opus'
+          : (MediaRecorder.isTypeSupported('audio/ogg;codecs=opus') ? 'audio/ogg;codecs=opus' : '');
+        mediaRecorder = mimeType ? new MediaRecorder(mediaStream, { mimeType }) : new MediaRecorder(mediaStream);
+        audioChunks = [];
+        audioBlob = null;
+        ui.transcribe.disabled = true;
+
+        mediaRecorder.addEventListener('dataavailable', event => {
+          if (event.data.size > 0) audioChunks.push(event.data);
+        });
+        mediaRecorder.addEventListener('stop', () => {
+          audioBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType || 'audio/webm' });
+          if (audioUrl) URL.revokeObjectURL(audioUrl);
+          audioUrl = URL.createObjectURL(audioBlob);
+          ui.audioPreview.src = audioUrl;
+          ui.audioPreview.hidden = false;
+          ui.recordingState.classList.remove('recording');
+          ui.recordingText.textContent = `Đã ghi âm ${(audioBlob.size / 1024).toFixed(1)} KB. Bạn có thể nghe lại trước khi xử lý.`;
+          ui.startRecord.disabled = false;
+          ui.stopRecord.disabled = true;
+          ui.transcribe.disabled = !modelReady;
+          mediaStream.getTracks().forEach(track => track.stop());
+          mediaStream = null;
+        });
+
+        mediaRecorder.start(250);
+        ui.recordingState.classList.add('recording');
+        ui.recordingText.textContent = 'Đang ghi âm...';
+        ui.startRecord.disabled = true;
+        ui.stopRecord.disabled = false;
+      } catch (error) {
+        ui.recordingText.textContent = `Không mở được microphone: ${error.message}`;
+      }
+    });
+
+    ui.stopRecord.addEventListener('click', () => {
+      if (mediaRecorder?.state === 'recording') mediaRecorder.stop();
+    });
+
+    ui.transcribe.addEventListener('click', async () => {
+      if (!audioBlob) return;
+      if (!modelReady) {
+        ui.result.textContent = 'Hãy nhấn “Khởi động model” trước khi xử lý.';
+        return;
+      }
+
+      setProcessingUi(true);
+      ui.result.textContent = 'Đang tải bản ghi âm lên server...';
+      ui.resultHint.textContent = 'Đang tạo job';
+      setModelStatus('', 'Đang gửi audio...');
+
+      try {
+        const data = await apiJson('/api/transcribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': audioBlob.type || 'audio/webm',
+            'X-Speaker-Count': ui.speakerCount.value
+          },
+          body: audioBlob
+        });
+        activeJobId = data.job_id;
+        localStorage.setItem('voice2text_active_job', activeJobId);
+        await pollJob(activeJobId);
+      } catch (error) {
+        ui.result.textContent = `Lỗi: ${error.message}`;
+        ui.resultHint.textContent = 'Xử lý thất bại';
+        setModelStatus('error', error.message);
+      } finally {
+        setProcessingUi(false);
+      }
+    });
+
+    (async function initialize() {
+      const status = await refreshStatus();
+      const jobId = status?.active_job_id || activeJobId;
+      if (jobId) await resumeJob(jobId);
+    })();
+  </script>
+</body>
+</html>

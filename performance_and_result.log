@@ -1,0 +1,814 @@
+2026-07-15 08:52:58 | Using device: cpu
+2026-07-15 08:52:58 | Loading models...
+2026-07-15 08:53:26 | [Model Initialization] Latency: 27.3951s | RAM: 1485.67 MB
+2026-07-15 08:53:26 | All models ready
+2026-07-15 08:53:26 | 
+========================================
+2026-07-15 08:53:26 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 08:53:26 | ========================================
+2026-07-15 08:53:32 | [1. Denoise Audio] Latency: 6.6683s | RAM: 1591.01 MB
+2026-07-15 08:53:34 | [2. VAD Split] Latency: 1.4351s | RAM: 1593.28 MB
+2026-07-15 08:53:34 | 
+--- Segment 1 ---
+2026-07-15 08:53:46 | [  ASR] Latency: 12.5141s | RAM: 1786.93 MB
+2026-07-15 08:53:46 |   Raw ASR: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 08:54:10 | [  LLM Correction] Latency: 23.7185s | RAM: 1788.79 MB
+2026-07-15 08:54:11 | [  Speaker Embedding] Latency: 0.9103s | RAM: 1788.95 MB
+2026-07-15 08:54:11 | 
+--- Segment 2 ---
+2026-07-15 08:54:16 | [  ASR] Latency: 5.2788s | RAM: 1811.04 MB
+2026-07-15 08:54:16 |   Raw ASR: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 08:54:39 | [  LLM Correction] Latency: 23.1835s | RAM: 1811.40 MB
+2026-07-15 08:54:40 | [  Speaker Embedding] Latency: 0.8313s | RAM: 1811.04 MB
+2026-07-15 08:54:40 | 
+--- Finalizing ---
+2026-07-15 08:54:40 | [3. Diarization] Latency: 0.1208s | RAM: 1811.27 MB
+2026-07-15 08:54:40 | 
+====== FINAL TEXT ======
+2026-07-15 08:54:40 | 
+Speaker 1: Chào bạn, tôi là sinh viên trường nào vậy?
+Speaker 2: Tôi là sinh viên đại học bách khoa hà nội.
+
+2026-07-15 08:54:40 | [TOTAL PIPELINE] Latency: 74.6732s | RAM: 1811.27 MB
+2026-07-15 09:30:55 | Using device: cpu
+2026-07-15 09:30:55 | Loading models...
+2026-07-15 09:30:58 | [Model Initialization] Latency: 3.6376s | RAM: 574.95 MB
+2026-07-15 09:30:58 | All models ready
+2026-07-15 09:30:58 | 
+========================================
+2026-07-15 09:30:58 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 09:30:58 | ========================================
+2026-07-15 09:31:03 | [1. Denoise Audio] Latency: 5.1032s | RAM: 647.16 MB
+2026-07-15 09:31:05 | [2. VAD Split] Latency: 1.4381s | RAM: 647.16 MB
+2026-07-15 09:31:05 | 
+--- Segment 1 ---
+2026-07-15 09:31:13 | [  ASR] Latency: 8.5059s | RAM: 856.90 MB
+2026-07-15 09:31:13 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 09:31:14 | [  Speaker Embedding] Latency: 0.9194s | RAM: 857.52 MB
+2026-07-15 09:31:14 | 
+--- Segment 2 ---
+2026-07-15 09:31:19 | [  ASR] Latency: 5.0472s | RAM: 857.76 MB
+2026-07-15 09:31:19 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 09:31:20 | [  Speaker Embedding] Latency: 0.8525s | RAM: 857.79 MB
+2026-07-15 09:31:20 | 
+--- Finalizing ---
+2026-07-15 09:31:20 | [3. Diarization] Latency: 0.0944s | RAM: 858.06 MB
+2026-07-15 09:31:20 | 
+====== FINAL TEXT ======
+2026-07-15 09:31:20 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 09:31:20 | [TOTAL PIPELINE] Latency: 21.9707s | RAM: 858.06 MB
+2026-07-15 11:09:31 | Using device: cpu
+2026-07-15 11:09:31 | Loading models...
+2026-07-15 11:09:33 | [Model Initialization] Latency: 2.4346s | RAM: 539.86 MB
+2026-07-15 11:09:33 | All models ready
+2026-07-15 11:09:33 | 
+========================================
+2026-07-15 11:09:33 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:09:33 | ========================================
+2026-07-15 11:09:37 | [1. Denoise Audio] Latency: 3.9919s | RAM: 634.07 MB
+2026-07-15 11:09:39 | [2. VAD Split] Latency: 1.1008s | RAM: 634.07 MB
+2026-07-15 11:09:39 | 
+--- Segment 1 ---
+2026-07-15 11:09:46 | [  ASR] Latency: 7.8928s | RAM: 851.47 MB
+2026-07-15 11:09:46 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:09:47 | [  Speaker Embedding] Latency: 0.7998s | RAM: 852.25 MB
+2026-07-15 11:09:47 | 
+--- Segment 2 ---
+2026-07-15 11:09:52 | [  ASR] Latency: 4.4452s | RAM: 874.09 MB
+2026-07-15 11:09:52 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:09:52 | [  Speaker Embedding] Latency: 0.7473s | RAM: 828.20 MB
+2026-07-15 11:09:52 | 
+--- Finalizing ---
+2026-07-15 11:09:53 | [3. Diarization] Latency: 0.0902s | RAM: 828.64 MB
+2026-07-15 11:09:53 | 
+====== FINAL TEXT ======
+2026-07-15 11:09:53 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 11:09:53 | [TOTAL PIPELINE] Latency: 19.0781s | RAM: 828.64 MB
+2026-07-15 11:17:13 | Using device: cpu
+2026-07-15 11:17:13 | Loading models...
+2026-07-15 11:17:16 | [Model Initialization] Latency: 2.4756s | RAM: 545.98 MB
+2026-07-15 11:17:16 | All models ready
+2026-07-15 11:17:23 | 
+========================================
+2026-07-15 11:17:23 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:17:23 | ========================================
+2026-07-15 11:17:27 | [1. Denoise Audio] Latency: 3.9298s | RAM: 632.94 MB
+2026-07-15 11:17:29 | [2. VAD Split] Latency: 1.1026s | RAM: 632.94 MB
+2026-07-15 11:17:29 | 
+--- Segment 1 ---
+2026-07-15 11:17:36 | [  ASR] Latency: 7.8758s | RAM: 842.30 MB
+2026-07-15 11:17:36 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:17:37 | [  Speaker Embedding] Latency: 0.7942s | RAM: 843.02 MB
+2026-07-15 11:17:37 | 
+--- Segment 2 ---
+2026-07-15 11:17:42 | [  ASR] Latency: 4.4445s | RAM: 853.91 MB
+2026-07-15 11:17:42 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:17:42 | [  Speaker Embedding] Latency: 0.7038s | RAM: 853.95 MB
+2026-07-15 11:17:42 | 
+--- Finalizing ---
+2026-07-15 11:17:42 | [3. Diarization] Latency: 0.0905s | RAM: 854.19 MB
+2026-07-15 11:17:42 | 
+====== FINAL TEXT ======
+2026-07-15 11:17:42 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 11:17:42 | [TOTAL PIPELINE] Latency: 18.9508s | RAM: 854.19 MB
+2026-07-15 11:18:47 | 
+========================================
+2026-07-15 11:18:47 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:18:47 | ========================================
+2026-07-15 11:18:50 | [1. Denoise Audio] Latency: 3.4287s | RAM: 916.55 MB
+2026-07-15 11:18:51 | [2. VAD Split] Latency: 0.7436s | RAM: 916.55 MB
+2026-07-15 11:18:51 | 
+--- Segment 1 ---
+2026-07-15 11:18:56 | [  ASR] Latency: 4.8326s | RAM: 947.30 MB
+2026-07-15 11:18:56 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:18:56 | [  Speaker Embedding] Latency: 0.6306s | RAM: 948.02 MB
+2026-07-15 11:18:56 | 
+--- Segment 2 ---
+2026-07-15 11:19:01 | [  ASR] Latency: 4.4702s | RAM: 948.03 MB
+2026-07-15 11:19:01 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:19:01 | [  Speaker Embedding] Latency: 0.5388s | RAM: 947.80 MB
+2026-07-15 11:19:01 | 
+--- Finalizing ---
+2026-07-15 11:19:01 | [3. Diarization] Latency: 0.0032s | RAM: 947.80 MB
+2026-07-15 11:19:01 | 
+====== FINAL TEXT ======
+2026-07-15 11:19:01 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 11:19:01 | [TOTAL PIPELINE] Latency: 14.6575s | RAM: 947.80 MB
+2026-07-15 11:20:00 | 
+========================================
+2026-07-15 11:20:00 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:20:00 | ========================================
+2026-07-15 11:20:09 | [1. Denoise Audio] Latency: 8.6059s | RAM: 905.48 MB
+2026-07-15 11:20:11 | [2. VAD Split] Latency: 1.8862s | RAM: 905.48 MB
+2026-07-15 11:20:11 | 
+--- Segment 1 ---
+2026-07-15 11:20:17 | [  ASR] Latency: 5.6581s | RAM: 927.20 MB
+2026-07-15 11:20:17 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:20:18 | [  Speaker Embedding] Latency: 1.0176s | RAM: 927.48 MB
+2026-07-15 11:20:18 | 
+--- Segment 2 ---
+2026-07-15 11:20:23 | [  ASR] Latency: 5.6643s | RAM: 927.29 MB
+2026-07-15 11:20:23 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:20:24 | [  Speaker Embedding] Latency: 0.8100s | RAM: 927.44 MB
+2026-07-15 11:20:24 | 
+--- Segment 3 ---
+2026-07-15 11:20:28 | [  ASR] Latency: 4.1323s | RAM: 927.32 MB
+2026-07-15 11:20:28 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:20:29 | [  Speaker Embedding] Latency: 0.7903s | RAM: 927.73 MB
+2026-07-15 11:20:29 | 
+--- Segment 4 ---
+2026-07-15 11:20:35 | [  ASR] Latency: 5.5777s | RAM: 927.61 MB
+2026-07-15 11:20:35 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:20:35 | [  Speaker Embedding] Latency: 0.7568s | RAM: 927.50 MB
+2026-07-15 11:20:35 | 
+--- Segment 5 ---
+2026-07-15 11:20:39 | [  ASR] Latency: 3.7143s | RAM: 927.18 MB
+2026-07-15 11:20:39 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:20:39 | [  Speaker Embedding] Latency: 0.3356s | RAM: 928.28 MB
+2026-07-15 11:20:39 | 
+--- Finalizing ---
+2026-07-15 11:20:39 | [3. Diarization] Latency: 0.0035s | RAM: 928.49 MB
+2026-07-15 11:20:39 | 
+====== FINAL TEXT ======
+2026-07-15 11:20:39 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 1: mình là sinh viên đại học bách khoa hà nội
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 1: mình là sinh viên đại học bách khoa hà nội
+Speaker 2: cho mình hỏi bạn là sinh viên trường nào vậy
+
+2026-07-15 11:20:39 | [TOTAL PIPELINE] Latency: 38.9761s | RAM: 928.49 MB
+2026-07-15 11:21:37 | 
+========================================
+2026-07-15 11:21:37 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:21:37 | ========================================
+2026-07-15 11:21:40 | [1. Denoise Audio] Latency: 2.6167s | RAM: 934.92 MB
+2026-07-15 11:21:40 | [2. VAD Split] Latency: 0.5751s | RAM: 934.92 MB
+2026-07-15 11:21:40 | 
+--- Segment 1 ---
+2026-07-15 11:21:44 | [  ASR] Latency: 3.9573s | RAM: 934.81 MB
+2026-07-15 11:21:44 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:21:45 | [  Speaker Embedding] Latency: 0.7654s | RAM: 934.90 MB
+2026-07-15 11:21:45 | 
+--- Finalizing ---
+2026-07-15 11:21:45 | [3. Diarization] Latency: 0.0001s | RAM: 934.90 MB
+2026-07-15 11:21:45 | 
+====== FINAL TEXT ======
+2026-07-15 11:21:45 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+
+2026-07-15 11:21:45 | [TOTAL PIPELINE] Latency: 7.9226s | RAM: 934.90 MB
+2026-07-15 11:21:57 | 
+========================================
+2026-07-15 11:21:57 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:21:57 | ========================================
+2026-07-15 11:22:01 | [1. Denoise Audio] Latency: 3.7027s | RAM: 940.15 MB
+2026-07-15 11:22:02 | [2. VAD Split] Latency: 0.6934s | RAM: 940.15 MB
+2026-07-15 11:22:02 | 
+--- Segment 1 ---
+2026-07-15 11:22:05 | [  ASR] Latency: 3.8743s | RAM: 950.97 MB
+2026-07-15 11:22:05 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:22:06 | [  Speaker Embedding] Latency: 0.6276s | RAM: 950.98 MB
+2026-07-15 11:22:06 | 
+--- Segment 2 ---
+2026-07-15 11:22:10 | [  ASR] Latency: 3.8580s | RAM: 950.96 MB
+2026-07-15 11:22:10 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:22:10 | [  Speaker Embedding] Latency: 0.5066s | RAM: 950.98 MB
+2026-07-15 11:22:10 | 
+--- Finalizing ---
+2026-07-15 11:22:11 | [3. Diarization] Latency: 0.0031s | RAM: 950.98 MB
+2026-07-15 11:22:11 | 
+====== FINAL TEXT ======
+2026-07-15 11:22:11 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: cho mình hỏi bạn là sinh viên trường nào vậy
+
+2026-07-15 11:22:11 | [TOTAL PIPELINE] Latency: 13.2768s | RAM: 950.98 MB
+2026-07-15 11:35:40 | Using device: cpu
+2026-07-15 11:35:40 | Loading models...
+2026-07-15 11:35:41 | Loading ASR model: models/phowhisper
+2026-07-15 11:35:42 | ASR model ready: models/phowhisper
+2026-07-15 11:35:43 | [Model Initialization] Latency: 2.8919s | RAM: 577.15 MB
+2026-07-15 11:35:43 | All models ready
+2026-07-15 11:35:47 | Loading ASR model: models/phowhisper_finetune
+2026-07-15 11:35:49 | ASR model ready: models/phowhisper_finetune
+2026-07-15 11:35:53 | Loading ASR model: models/phowhisper-origin
+2026-07-15 11:35:54 | ASR model ready: models/phowhisper-origin
+2026-07-15 11:36:02 | 
+========================================
+2026-07-15 11:36:02 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:36:02 | ========================================
+2026-07-15 11:36:07 | [1. Denoise Audio] Latency: 5.1360s | RAM: 630.75 MB
+2026-07-15 11:36:09 | [2. VAD Split] Latency: 1.4271s | RAM: 630.75 MB
+2026-07-15 11:36:09 | 
+--- Segment 1 ---
+2026-07-15 11:36:21 | [  ASR] Latency: 12.0511s | RAM: 1022.37 MB
+2026-07-15 11:36:21 |   ASR Text: cha mình hỏi bạn là sinh viên chương nào vậy.
+2026-07-15 11:36:22 | [  Speaker Embedding] Latency: 0.9654s | RAM: 1022.99 MB
+2026-07-15 11:36:22 | 
+--- Segment 2 ---
+2026-07-15 11:36:29 | [  ASR] Latency: 7.6601s | RAM: 1023.32 MB
+2026-07-15 11:36:29 |   ASR Text: mình là sinh viên đại học bách khoa hà nội.
+2026-07-15 11:36:30 | [  Speaker Embedding] Latency: 0.8737s | RAM: 1023.26 MB
+2026-07-15 11:36:30 | 
+--- Finalizing ---
+2026-07-15 11:36:30 | [3. Diarization] Latency: 0.1001s | RAM: 1023.52 MB
+2026-07-15 11:36:30 | 
+====== FINAL TEXT ======
+2026-07-15 11:36:30 | 
+Speaker 1: cha mình hỏi bạn là sinh viên chương nào vậy.
+Speaker 2: mình là sinh viên đại học bách khoa hà nội.
+
+2026-07-15 11:36:30 | [TOTAL PIPELINE] Latency: 28.2256s | RAM: 1023.52 MB
+2026-07-15 11:36:42 | Loading ASR model: models/phowhisper
+2026-07-15 11:36:43 | ASR model ready: models/phowhisper
+2026-07-15 11:40:31 | Using device: cpu
+2026-07-15 11:40:31 | Loading models...
+2026-07-15 11:40:31 | Loading ASR model: models/phowhisper
+2026-07-15 11:40:33 | ASR model ready: models/phowhisper
+2026-07-15 11:40:33 | [Model Initialization] Latency: 2.8446s | RAM: 539.25 MB
+2026-07-15 11:40:33 | All models ready
+2026-07-15 11:40:47 | 
+========================================
+2026-07-15 11:40:47 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:40:47 | ========================================
+2026-07-15 11:40:52 | [1. Denoise Audio] Latency: 5.0429s | RAM: 647.39 MB
+2026-07-15 11:40:53 | [2. VAD Split] Latency: 1.3475s | RAM: 647.65 MB
+2026-07-15 11:40:53 | 
+--- Segment 1 ---
+2026-07-15 11:41:01 | [  ASR] Latency: 8.0696s | RAM: 870.58 MB
+2026-07-15 11:41:01 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:41:02 | [  Speaker Embedding] Latency: 0.9648s | RAM: 871.31 MB
+2026-07-15 11:41:02 | 
+--- Segment 2 ---
+2026-07-15 11:41:07 | [  ASR] Latency: 4.2883s | RAM: 860.94 MB
+2026-07-15 11:41:07 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:41:08 | [  Speaker Embedding] Latency: 0.9222s | RAM: 860.97 MB
+2026-07-15 11:41:08 | 
+--- Finalizing ---
+2026-07-15 11:41:08 | [3. Diarization] Latency: 0.0922s | RAM: 861.35 MB
+2026-07-15 11:41:08 | 
+====== FINAL TEXT ======
+2026-07-15 11:41:08 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 1: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 11:41:08 | [TOTAL PIPELINE] Latency: 20.7395s | RAM: 861.35 MB
+2026-07-15 11:41:46 | 
+========================================
+2026-07-15 11:41:46 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:41:46 | ========================================
+2026-07-15 11:41:53 | [1. Denoise Audio] Latency: 6.9629s | RAM: 908.33 MB
+2026-07-15 11:41:57 | [2. VAD Split] Latency: 4.5658s | RAM: 908.33 MB
+2026-07-15 11:41:57 | 
+--- Segment 1 ---
+2026-07-15 11:42:02 | [  ASR] Latency: 4.6228s | RAM: 908.80 MB
+2026-07-15 11:42:02 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:42:03 | [  Speaker Embedding] Latency: 0.8437s | RAM: 908.83 MB
+2026-07-15 11:42:03 | 
+--- Segment 2 ---
+2026-07-15 11:42:06 | [  ASR] Latency: 3.0619s | RAM: 908.88 MB
+2026-07-15 11:42:06 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:42:07 | [  Speaker Embedding] Latency: 0.6340s | RAM: 908.90 MB
+2026-07-15 11:42:07 | 
+--- Segment 3 ---
+2026-07-15 11:42:11 | [  ASR] Latency: 4.8342s | RAM: 908.93 MB
+2026-07-15 11:42:11 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:42:12 | [  Speaker Embedding] Latency: 0.8285s | RAM: 908.95 MB
+2026-07-15 11:42:12 | 
+--- Segment 4 ---
+2026-07-15 11:42:15 | [  ASR] Latency: 3.1452s | RAM: 919.69 MB
+2026-07-15 11:42:15 |   ASR Text: mình là sinh viên trường nào vậy
+2026-07-15 11:42:16 | [  Speaker Embedding] Latency: 0.4108s | RAM: 919.88 MB
+2026-07-15 11:42:16 | 
+--- Finalizing ---
+2026-07-15 11:42:16 | [3. Diarization] Latency: 0.0035s | RAM: 919.88 MB
+2026-07-15 11:42:16 | 
+====== FINAL TEXT ======
+2026-07-15 11:42:16 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 3: mình là sinh viên đại học bách khoa hà nội
+Speaker 4: mình là sinh viên trường nào vậy
+
+2026-07-15 11:42:16 | [TOTAL PIPELINE] Latency: 29.9315s | RAM: 919.88 MB
+2026-07-15 11:42:49 | 
+========================================
+2026-07-15 11:42:49 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:42:49 | ========================================
+2026-07-15 11:42:55 | [1. Denoise Audio] Latency: 6.5581s | RAM: 955.42 MB
+2026-07-15 11:42:57 | [2. VAD Split] Latency: 1.3187s | RAM: 955.42 MB
+2026-07-15 11:42:57 | 
+--- Segment 1 ---
+2026-07-15 11:43:01 | [  ASR] Latency: 4.6012s | RAM: 955.80 MB
+2026-07-15 11:43:01 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:43:02 | [  Speaker Embedding] Latency: 0.6909s | RAM: 955.83 MB
+2026-07-15 11:43:02 | 
+--- Segment 2 ---
+2026-07-15 11:43:05 | [  ASR] Latency: 3.1812s | RAM: 955.86 MB
+2026-07-15 11:43:05 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:43:06 | [  Speaker Embedding] Latency: 0.6166s | RAM: 955.88 MB
+2026-07-15 11:43:06 | 
+--- Segment 3 ---
+2026-07-15 11:43:09 | [  ASR] Latency: 3.3901s | RAM: 955.90 MB
+2026-07-15 11:43:09 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:43:11 | [  Speaker Embedding] Latency: 1.2270s | RAM: 955.93 MB
+2026-07-15 11:43:11 | 
+--- Finalizing ---
+2026-07-15 11:43:11 | [3. Diarization] Latency: 0.0034s | RAM: 955.93 MB
+2026-07-15 11:43:11 | 
+====== FINAL TEXT ======
+2026-07-15 11:43:11 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+Speaker 3: cho mình hỏi bạn là sinh viên trường nào vậy
+
+2026-07-15 11:43:11 | [TOTAL PIPELINE] Latency: 21.6014s | RAM: 955.93 MB
+2026-07-15 11:43:21 | Loading ASR model: models/phowhisper-origin
+2026-07-15 11:43:22 | ASR model ready: models/phowhisper-origin
+2026-07-15 11:43:47 | 
+========================================
+2026-07-15 11:43:47 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:43:47 | ========================================
+2026-07-15 11:43:54 | [1. Denoise Audio] Latency: 6.6501s | RAM: 875.74 MB
+2026-07-15 11:43:55 | [2. VAD Split] Latency: 1.5058s | RAM: 875.74 MB
+2026-07-15 11:43:55 | 
+--- Segment 1 ---
+2026-07-15 11:44:02 | [  ASR] Latency: 6.2033s | RAM: 968.41 MB
+2026-07-15 11:44:02 |   ASR Text: hôm nay tôi đi chơi.
+2026-07-15 11:44:02 | [  Speaker Embedding] Latency: 0.6268s | RAM: 968.29 MB
+2026-07-15 11:44:02 | 
+--- Segment 2 ---
+2026-07-15 11:44:09 | [  ASR] Latency: 6.5948s | RAM: 968.41 MB
+2026-07-15 11:44:09 |   ASR Text: hôm nay tôi đi đá bóng.
+2026-07-15 11:44:09 | [  Speaker Embedding] Latency: 0.5666s | RAM: 968.29 MB
+2026-07-15 11:44:09 | 
+--- Segment 3 ---
+2026-07-15 11:44:15 | [  ASR] Latency: 5.4763s | RAM: 968.43 MB
+2026-07-15 11:44:15 |   ASR Text: trời hôm nay mưa.
+2026-07-15 11:44:15 | [  Speaker Embedding] Latency: 0.4578s | RAM: 968.23 MB
+2026-07-15 11:44:15 | 
+--- Segment 4 ---
+2026-07-15 11:44:21 | [  ASR] Latency: 5.7060s | RAM: 968.45 MB
+2026-07-15 11:44:21 |   ASR Text: trời mồm này nắng.
+2026-07-15 11:44:22 | [  Speaker Embedding] Latency: 0.4997s | RAM: 968.34 MB
+2026-07-15 11:44:22 | 
+--- Segment 5 ---
+2026-07-15 11:44:27 | [  ASR] Latency: 5.1826s | RAM: 990.44 MB
+2026-07-15 11:44:27 |   ASR Text: tôi đàn cô.
+2026-07-15 11:44:27 | [  Speaker Embedding] Latency: 0.5011s | RAM: 990.27 MB
+2026-07-15 11:44:27 | 
+--- Finalizing ---
+2026-07-15 11:44:27 | [3. Diarization] Latency: 0.0032s | RAM: 990.27 MB
+2026-07-15 11:44:27 | 
+====== FINAL TEXT ======
+2026-07-15 11:44:27 | 
+Speaker 1: hôm nay tôi đi chơi.
+Speaker 2: hôm nay tôi đi đá bóng.
+Speaker 3: trời hôm nay mưa.
+Speaker 4: trời mồm này nắng.
+Speaker 5: tôi đàn cô.
+
+2026-07-15 11:44:27 | [TOTAL PIPELINE] Latency: 39.9980s | RAM: 990.27 MB
+2026-07-15 11:50:18 | Using device: cpu
+2026-07-15 11:50:18 | Loading models...
+2026-07-15 11:50:19 | Loading ASR model: models/phowhisper
+2026-07-15 11:50:20 | ASR model ready: models/phowhisper
+2026-07-15 11:50:22 | [Model Initialization] Latency: 3.4582s | RAM: 548.88 MB
+2026-07-15 11:50:22 | All models ready
+2026-07-15 11:50:29 | Loading LLM model: models/qwen
+2026-07-15 11:51:01 | LLM model ready: models/qwen
+2026-07-15 11:51:14 | 
+========================================
+2026-07-15 11:51:14 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:51:14 | ========================================
+2026-07-15 11:51:20 | [1. Denoise Audio] Latency: 5.7819s | RAM: 1558.93 MB
+2026-07-15 11:51:21 | [2. VAD Split] Latency: 1.4506s | RAM: 1560.42 MB
+2026-07-15 11:51:21 | 
+--- Segment 1 ---
+2026-07-15 11:51:33 | [  ASR] Latency: 11.5683s | RAM: 1789.09 MB
+2026-07-15 11:51:33 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 11:52:02 | [  LLM Correction] Latency: 29.0335s | RAM: 1585.20 MB
+2026-07-15 11:52:02 |   LLM Text: Chào bạn, tôi là sinh viên trường nào vậy?
+2026-07-15 11:52:04 | [  Speaker Embedding] Latency: 1.6550s | RAM: 1586.03 MB
+2026-07-15 11:52:04 | 
+--- Segment 2 ---
+2026-07-15 11:52:12 | [  ASR] Latency: 7.8661s | RAM: 1615.82 MB
+2026-07-15 11:52:12 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 11:52:42 | [  LLM Correction] Latency: 30.6964s | RAM: 1608.46 MB
+2026-07-15 11:52:42 |   LLM Text: Tôi là sinh viên đại học bách khoa hà nội.
+2026-07-15 11:52:43 | [  Speaker Embedding] Latency: 0.8142s | RAM: 1608.19 MB
+2026-07-15 11:52:43 | 
+--- Finalizing ---
+2026-07-15 11:52:44 | [3. Diarization] Latency: 0.8478s | RAM: 1612.02 MB
+2026-07-15 11:52:44 | 
+====== FINAL TEXT ======
+2026-07-15 11:52:44 | 
+Speaker 1: Chào bạn, tôi là sinh viên trường nào vậy?
+Speaker 2: Tôi là sinh viên đại học bách khoa hà nội.
+
+2026-07-15 11:52:44 | [TOTAL PIPELINE] Latency: 89.7703s | RAM: 1612.02 MB
+2026-07-15 11:52:56 | Unloading LLM model
+2026-07-15 11:52:57 | LLM model unloaded
+2026-07-15 11:54:16 | Loading ASR model: models/phowhisper-origin
+2026-07-15 11:54:19 | ASR model ready: models/phowhisper-origin
+2026-07-15 11:54:19 | Loading LLM model: models/qwen
+2026-07-15 11:54:53 | LLM model ready: models/qwen
+2026-07-15 11:55:15 | 
+========================================
+2026-07-15 11:55:15 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 11:55:15 | ========================================
+2026-07-15 11:55:25 | [1. Denoise Audio] Latency: 9.9788s | RAM: 2271.86 MB
+2026-07-15 11:55:26 | [2. VAD Split] Latency: 1.3652s | RAM: 2230.71 MB
+2026-07-15 11:55:26 | 
+--- Segment 1 ---
+2026-07-15 11:55:48 | [  ASR] Latency: 21.5797s | RAM: 2332.43 MB
+2026-07-15 11:55:48 |   ASR Text: tôi đã đi chơi.
+2026-07-15 11:56:04 | [  LLM Correction] Latency: 16.6177s | RAM: 2338.11 MB
+2026-07-15 11:56:04 |   LLM Text: Tôi đã đi chơi.
+2026-07-15 11:56:06 | [  Speaker Embedding] Latency: 1.1846s | RAM: 2355.80 MB
+2026-07-15 11:56:06 | 
+--- Segment 2 ---
+2026-07-15 11:56:12 | [  ASR] Latency: 6.0584s | RAM: 2378.71 MB
+2026-07-15 11:56:12 |   ASR Text: hôm nay trời mưa.
+2026-07-15 11:56:29 | [  LLM Correction] Latency: 16.9982s | RAM: 2379.16 MB
+2026-07-15 11:56:29 |   LLM Text: hôm nay trời mưa.
+2026-07-15 11:56:29 | [  Speaker Embedding] Latency: 0.5936s | RAM: 2382.88 MB
+2026-07-15 11:56:29 | 
+--- Segment 3 ---
+2026-07-15 11:56:35 | [  ASR] Latency: 6.1844s | RAM: 2319.07 MB
+2026-07-15 11:56:35 |   ASR Text: chiều nay tôi bảo vậy.
+2026-07-15 11:56:54 | [  LLM Correction] Latency: 18.1916s | RAM: 2319.26 MB
+2026-07-15 11:56:54 |   LLM Text: chiều nay tôi bảo vậy.
+2026-07-15 11:56:54 | [  Speaker Embedding] Latency: 0.5437s | RAM: 2323.52 MB
+2026-07-15 11:56:54 | 
+--- Segment 4 ---
+2026-07-15 11:57:00 | [  ASR] Latency: 6.2460s | RAM: 2235.41 MB
+2026-07-15 11:57:00 |   ASR Text: hôm nay trời nặng quá.
+2026-07-15 11:57:20 | [  LLM Correction] Latency: 19.8750s | RAM: 2235.75 MB
+2026-07-15 11:57:20 |   LLM Text: hôm nay trời nặng quá.
+2026-07-15 11:57:21 | [  Speaker Embedding] Latency: 0.6485s | RAM: 2235.83 MB
+2026-07-15 11:57:21 | 
+--- Finalizing ---
+2026-07-15 11:57:21 | [3. Diarization] Latency: 0.1146s | RAM: 2239.58 MB
+2026-07-15 11:57:21 | 
+====== FINAL TEXT ======
+2026-07-15 11:57:21 | 
+Speaker 1: Tôi đã đi chơi.
+Speaker 2: hôm nay trời mưa.
+Speaker 3: chiều nay tôi bảo vậy.
+Speaker 4: hôm nay trời nặng quá.
+
+2026-07-15 11:57:21 | [TOTAL PIPELINE] Latency: 126.3194s | RAM: 2239.58 MB
+2026-07-15 11:58:50 | Loading ASR model: models/phowhisper
+2026-07-15 11:58:54 | ASR model ready: models/phowhisper
+2026-07-15 12:14:21 | Using device: cpu
+2026-07-15 12:14:21 | Loading models...
+2026-07-15 12:14:22 | Loading ASR model: models/phowhisper
+2026-07-15 12:14:23 | ASR model ready: models/phowhisper
+2026-07-15 12:14:25 | [Model Initialization] Latency: 4.3295s | RAM: 544.21 MB
+2026-07-15 12:14:25 | All models ready
+2026-07-15 12:14:25 | Loading LLM model: models/qwen
+2026-07-15 12:14:57 | LLM model ready: models/qwen
+2026-07-15 12:15:16 | 
+========================================
+2026-07-15 12:15:16 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 12:15:16 | ========================================
+2026-07-15 12:15:26 | [1. Denoise Audio] Latency: 10.0952s | RAM: 1521.07 MB
+2026-07-15 12:15:28 | [2. VAD Split] Latency: 2.2030s | RAM: 1530.83 MB
+2026-07-15 12:15:28 | 
+--- Segment 1 ---
+2026-07-15 12:15:41 | [  ASR] Latency: 13.2939s | RAM: 1726.20 MB
+2026-07-15 12:15:41 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 12:16:02 | [  LLM Correction] Latency: 21.0073s | RAM: 1728.35 MB
+2026-07-15 12:16:02 |   LLM Text: Chào bạn, tôi là sinh viên trường nào vậy?
+2026-07-15 12:16:03 | [  Speaker Embedding] Latency: 0.8441s | RAM: 1728.94 MB
+2026-07-15 12:16:03 | 
+--- Segment 2 ---
+2026-07-15 12:16:08 | [  ASR] Latency: 4.8208s | RAM: 1725.25 MB
+2026-07-15 12:16:08 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 12:16:30 | [  LLM Correction] Latency: 22.3369s | RAM: 1725.77 MB
+2026-07-15 12:16:30 |   LLM Text: Tôi là sinh viên đại học bách khoa hà nội.
+2026-07-15 12:16:31 | [  Speaker Embedding] Latency: 0.8176s | RAM: 1725.70 MB
+2026-07-15 12:16:31 | 
+--- Segment 3 ---
+2026-07-15 12:16:35 | [  ASR] Latency: 3.7701s | RAM: 1720.51 MB
+2026-07-15 12:16:35 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 12:16:56 | [  LLM Correction] Latency: 21.3997s | RAM: 1720.86 MB
+2026-07-15 12:16:56 |   LLM Text: Chào bạn, tôi là sinh viên trường nào vậy?
+2026-07-15 12:16:57 | [  Speaker Embedding] Latency: 0.9254s | RAM: 1718.66 MB
+2026-07-15 12:16:57 | 
+--- Segment 4 ---
+2026-07-15 12:17:02 | [  ASR] Latency: 5.2165s | RAM: 1713.00 MB
+2026-07-15 12:17:02 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 12:17:26 | [  LLM Correction] Latency: 23.9300s | RAM: 1713.51 MB
+2026-07-15 12:17:26 |   LLM Text: Tôi là sinh viên đại học bách khoa hà nội.
+2026-07-15 12:17:27 | [  Speaker Embedding] Latency: 0.8345s | RAM: 1713.37 MB
+2026-07-15 12:17:27 | 
+--- Finalizing ---
+2026-07-15 12:17:28 | [3. Diarization] Latency: 0.4715s | RAM: 1714.66 MB
+2026-07-15 12:17:28 | 
+====== FINAL TEXT ======
+2026-07-15 12:17:28 | 
+Speaker 1: Chào bạn, tôi là sinh viên trường nào vậy?
+Speaker 2: Tôi là sinh viên đại học bách khoa hà nội.
+Speaker 1: Chào bạn, tôi là sinh viên trường nào vậy?
+Speaker 2: Tôi là sinh viên đại học bách khoa hà nội.
+
+2026-07-15 12:17:28 | [TOTAL PIPELINE] Latency: 131.9947s | RAM: 1714.66 MB
+2026-07-15 12:17:56 | Unloading LLM model
+2026-07-15 12:17:57 | LLM model unloaded
+2026-07-15 12:18:56 | Loading ASR model: models/phowhisper-origin
+2026-07-15 12:18:58 | ASR model ready: models/phowhisper-origin
+2026-07-15 12:18:58 | Loading LLM model: models/qwen
+2026-07-15 12:19:28 | LLM model ready: models/qwen
+2026-07-15 12:19:45 | 
+========================================
+2026-07-15 12:19:45 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 12:19:45 | ========================================
+2026-07-15 12:19:51 | [1. Denoise Audio] Latency: 5.3045s | RAM: 1728.51 MB
+2026-07-15 12:19:52 | [2. VAD Split] Latency: 1.1049s | RAM: 1729.58 MB
+2026-07-15 12:19:52 | 
+--- Segment 1 ---
+2026-07-15 12:20:00 | [  ASR] Latency: 7.9756s | RAM: 1909.31 MB
+2026-07-15 12:20:00 |   ASR Text: hôm nay tôi buồn.
+2026-07-15 12:20:20 | [  LLM Correction] Latency: 20.1264s | RAM: 1909.57 MB
+2026-07-15 12:20:20 |   LLM Text: hôm nay tôi buồn.
+2026-07-15 12:20:20 | [  Speaker Embedding] Latency: 0.5000s | RAM: 1910.16 MB
+2026-07-15 12:20:20 | 
+--- Segment 2 ---
+2026-07-15 12:20:26 | [  ASR] Latency: 5.7880s | RAM: 1910.32 MB
+2026-07-15 12:20:26 |   ASR Text: vậy thì vui.
+2026-07-15 12:20:45 | [  LLM Correction] Latency: 19.1421s | RAM: 1910.51 MB
+2026-07-15 12:20:45 |   LLM Text: So then, do you?
+2026-07-15 12:20:46 | [  Speaker Embedding] Latency: 0.3740s | RAM: 1910.52 MB
+2026-07-15 12:20:46 | 
+--- Segment 3 ---
+2026-07-15 12:20:51 | [  ASR] Latency: 4.9660s | RAM: 1894.57 MB
+2026-07-15 12:20:51 |   ASR Text: hôm nay đây.
+2026-07-15 12:21:09 | [  LLM Correction] Latency: 18.1720s | RAM: 1894.57 MB
+2026-07-15 12:21:09 |   LLM Text: hôm nay đây.
+2026-07-15 12:21:09 | [  Speaker Embedding] Latency: 0.3285s | RAM: 1894.58 MB
+2026-07-15 12:21:09 | 
+--- Segment 4 ---
+2026-07-15 12:21:14 | [  ASR] Latency: 5.3621s | RAM: 1894.54 MB
+2026-07-15 12:21:14 |   ASR Text: tôi ăn cướp đi.
+2026-07-15 12:21:33 | [  LLM Correction] Latency: 18.5166s | RAM: 1894.54 MB
+2026-07-15 12:21:33 |   LLM Text: Tôi ăn cướp đi.
+2026-07-15 12:21:33 | [  Speaker Embedding] Latency: 0.4604s | RAM: 1894.55 MB
+2026-07-15 12:21:33 | 
+--- Segment 5 ---
+2026-07-15 12:21:40 | [  ASR] Latency: 6.4561s | RAM: 1894.73 MB
+2026-07-15 12:21:40 |   ASR Text: hôm nay tôi không hăng cướp.
+2026-07-15 12:22:01 | [  LLM Correction] Latency: 21.2798s | RAM: 1894.73 MB
+2026-07-15 12:22:01 |   LLM Text: hôm nay tôi không hăng cướp.
+2026-07-15 12:22:02 | [  Speaker Embedding] Latency: 0.5298s | RAM: 1894.74 MB
+2026-07-15 12:22:02 | 
+--- Finalizing ---
+2026-07-15 12:22:02 | [3. Diarization] Latency: 0.0035s | RAM: 1894.75 MB
+2026-07-15 12:22:02 | 
+====== FINAL TEXT ======
+2026-07-15 12:22:02 | 
+Speaker 1: hôm nay tôi buồn.
+Speaker 2: So then, do you?
+Speaker 3: hôm nay đây.
+Speaker 4: Tôi ăn cướp đi.
+Speaker 5: hôm nay tôi không hăng cướp.
+
+2026-07-15 12:22:02 | [TOTAL PIPELINE] Latency: 136.4205s | RAM: 1894.75 MB
+2026-07-15 12:22:29 | Unloading LLM model
+2026-07-15 12:22:30 | LLM model unloaded
+2026-07-15 12:22:42 | 
+========================================
+2026-07-15 12:22:42 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 12:22:42 | ========================================
+2026-07-15 12:22:46 | [1. Denoise Audio] Latency: 4.2784s | RAM: 1024.37 MB
+2026-07-15 12:22:47 | [2. VAD Split] Latency: 0.8700s | RAM: 1024.56 MB
+2026-07-15 12:22:47 | 
+--- Segment 1 ---
+2026-07-15 12:22:52 | [  ASR] Latency: 4.6360s | RAM: 1029.32 MB
+2026-07-15 12:22:52 |   ASR Text: thầy.
+2026-07-15 12:22:52 | [  Speaker Embedding] Latency: 0.3187s | RAM: 1029.12 MB
+2026-07-15 12:22:52 | 
+--- Segment 2 ---
+2026-07-15 12:22:58 | [  ASR] Latency: 5.7259s | RAM: 1007.42 MB
+2026-07-15 12:22:58 |   ASR Text: rồi tôi buồn.
+2026-07-15 12:22:58 | [  Speaker Embedding] Latency: 0.4523s | RAM: 1007.14 MB
+2026-07-15 12:22:58 | 
+--- Segment 3 ---
+2026-07-15 12:23:04 | [  ASR] Latency: 5.2619s | RAM: 1084.03 MB
+2026-07-15 12:23:04 |   ASR Text: cái tôi vui.
+2026-07-15 12:23:04 | [  Speaker Embedding] Latency: 0.3555s | RAM: 1084.10 MB
+2026-07-15 12:23:04 | 
+--- Finalizing ---
+2026-07-15 12:23:04 | [3. Diarization] Latency: 0.0033s | RAM: 1084.10 MB
+2026-07-15 12:23:04 | 
+====== FINAL TEXT ======
+2026-07-15 12:23:04 | 
+Speaker 1: thầy.
+Speaker 2: rồi tôi buồn.
+Speaker 3: cái tôi vui.
+
+2026-07-15 12:23:04 | [TOTAL PIPELINE] Latency: 21.9141s | RAM: 1084.10 MB
+2026-07-15 12:23:47 | Loading ASR model: models/phowhisper_finetune
+2026-07-15 12:23:50 | ASR model ready: models/phowhisper_finetune
+2026-07-15 12:24:09 | 
+========================================
+2026-07-15 12:24:09 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 12:24:09 | ========================================
+2026-07-15 12:24:16 | [1. Denoise Audio] Latency: 6.8785s | RAM: 1001.98 MB
+2026-07-15 12:24:18 | [2. VAD Split] Latency: 1.5015s | RAM: 1001.98 MB
+2026-07-15 12:24:18 | 
+--- Segment 1 ---
+2026-07-15 12:24:28 | [  ASR] Latency: 10.4426s | RAM: 1140.28 MB
+2026-07-15 12:24:28 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 12:24:28 | [  Speaker Embedding] Latency: 0.4225s | RAM: 1140.28 MB
+2026-07-15 12:24:28 | 
+--- Segment 2 ---
+2026-07-15 12:24:38 | [  ASR] Latency: 9.5743s | RAM: 1136.91 MB
+2026-07-15 12:24:38 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 12:24:38 | [  Speaker Embedding] Latency: 0.4655s | RAM: 1136.93 MB
+2026-07-15 12:24:38 | 
+--- Segment 3 ---
+2026-07-15 12:24:43 | [  ASR] Latency: 4.6248s | RAM: 1136.91 MB
+2026-07-15 12:24:43 |   ASR Text: ronaldo.
+2026-07-15 12:24:43 | [  Speaker Embedding] Latency: 0.3896s | RAM: 1136.92 MB
+2026-07-15 12:24:43 | 
+--- Segment 4 ---
+2026-07-15 12:24:55 | [  ASR] Latency: 11.4577s | RAM: 1136.52 MB
+2026-07-15 12:24:55 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 12:24:55 | [  Speaker Embedding] Latency: 0.4218s | RAM: 1136.52 MB
+2026-07-15 12:24:55 | 
+--- Segment 5 ---
+2026-07-15 12:25:06 | [  ASR] Latency: 10.1472s | RAM: 1137.01 MB
+2026-07-15 12:25:06 |   ASR Text: mình là người hỏi bạn là sinh viên trường nào vậy
+2026-07-15 12:25:06 | [  Speaker Embedding] Latency: 0.4697s | RAM: 1137.02 MB
+2026-07-15 12:25:06 | 
+--- Segment 6 ---
+2026-07-15 12:25:14 | [  ASR] Latency: 7.9202s | RAM: 1136.85 MB
+2026-07-15 12:25:14 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 12:25:15 | [  Speaker Embedding] Latency: 0.7157s | RAM: 1136.88 MB
+2026-07-15 12:25:15 | 
+--- Finalizing ---
+2026-07-15 12:25:15 | [3. Diarization] Latency: 0.0032s | RAM: 1136.88 MB
+2026-07-15 12:25:15 | 
+====== FINAL TEXT ======
+2026-07-15 12:25:15 | 
+Speaker 1: mình là sinh viên đại học bách khoa hà nội
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+Speaker 2: ronaldo.
+Speaker 3: mình là sinh viên đại học bách khoa hà nội
+Speaker 4: mình là người hỏi bạn là sinh viên trường nào vậy
+Speaker 5: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 12:25:15 | [TOTAL PIPELINE] Latency: 65.4573s | RAM: 1136.88 MB
+2026-07-15 12:26:04 | Loading ASR model: models/phowhisper-origin
+2026-07-15 12:26:06 | ASR model ready: models/phowhisper-origin
+2026-07-15 12:27:49 | 
+========================================
+2026-07-15 12:27:49 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 12:27:49 | ========================================
+2026-07-15 12:27:54 | [1. Denoise Audio] Latency: 5.1328s | RAM: 877.84 MB
+2026-07-15 12:27:55 | [2. VAD Split] Latency: 1.1683s | RAM: 877.84 MB
+2026-07-15 12:27:55 | 
+--- Segment 1 ---
+2026-07-15 12:28:04 | [  ASR] Latency: 8.6171s | RAM: 1071.93 MB
+2026-07-15 12:28:04 |   ASR Text: còn thấy rất là buồn.
+2026-07-15 12:28:05 | [  Speaker Embedding] Latency: 0.7267s | RAM: 1071.96 MB
+2026-07-15 12:28:05 | 
+--- Segment 2 ---
+2026-07-15 12:28:12 | [  ASR] Latency: 7.5776s | RAM: 1071.68 MB
+2026-07-15 12:28:12 |   ASR Text: hôm nay tôi bảo vệ bài tập luyện.
+2026-07-15 12:28:13 | [  Speaker Embedding] Latency: 0.7469s | RAM: 1071.68 MB
+2026-07-15 12:28:13 | 
+--- Segment 3 ---
+2026-07-15 12:28:20 | [  ASR] Latency: 7.0072s | RAM: 1071.86 MB
+2026-07-15 12:28:20 |   ASR Text: hôm nay tôi cảm thấy rất là vui.
+2026-07-15 12:28:21 | [  Speaker Embedding] Latency: 0.6045s | RAM: 1071.88 MB
+2026-07-15 12:28:21 | 
+--- Finalizing ---
+2026-07-15 12:28:21 | [3. Diarization] Latency: 0.0031s | RAM: 1071.88 MB
+2026-07-15 12:28:21 | 
+====== FINAL TEXT ======
+2026-07-15 12:28:21 | 
+Speaker 1: còn thấy rất là buồn.
+Speaker 2: hôm nay tôi bảo vệ bài tập luyện.
+Speaker 3: hôm nay tôi cảm thấy rất là vui.
+
+2026-07-15 12:28:21 | [TOTAL PIPELINE] Latency: 31.5962s | RAM: 1071.88 MB
+2026-07-15 13:07:06 | Using device: cpu
+2026-07-15 13:07:06 | Loading models...
+2026-07-15 13:07:07 | Loading ASR model: models/phowhisper
+2026-07-15 13:07:08 | ASR model ready: models/phowhisper
+2026-07-15 13:07:10 | [Model Initialization] Latency: 4.1255s | RAM: 542.77 MB
+2026-07-15 13:07:10 | All models ready
+2026-07-15 13:19:37 | 
+========================================
+2026-07-15 13:19:37 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 13:19:37 | ========================================
+2026-07-15 13:19:42 | [1. Denoise Audio] Latency: 4.8520s | RAM: 633.21 MB
+2026-07-15 13:19:44 | [2. VAD Split] Latency: 1.3805s | RAM: 633.21 MB
+2026-07-15 13:19:44 | 
+--- Segment 1 ---
+2026-07-15 13:19:57 | [  ASR] Latency: 13.2486s | RAM: 869.07 MB
+2026-07-15 13:19:57 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 13:19:58 | [  Speaker Embedding] Latency: 0.7128s | RAM: 869.95 MB
+2026-07-15 13:19:58 | 
+--- Segment 2 ---
+2026-07-15 13:20:03 | [  ASR] Latency: 5.5267s | RAM: 891.84 MB
+2026-07-15 13:20:03 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 13:20:04 | [  Speaker Embedding] Latency: 0.8011s | RAM: 891.87 MB
+2026-07-15 13:20:04 | 
+--- Segment 3 ---
+2026-07-15 13:20:08 | [  ASR] Latency: 3.7215s | RAM: 891.90 MB
+2026-07-15 13:20:08 |   ASR Text: mình là sinh viên trường nào vậy
+2026-07-15 13:20:08 | [  Speaker Embedding] Latency: 0.5045s | RAM: 894.61 MB
+2026-07-15 13:20:08 | 
+--- Finalizing ---
+2026-07-15 13:20:08 | [3. Diarization] Latency: 0.1157s | RAM: 894.91 MB
+2026-07-15 13:20:08 | 
+====== FINAL TEXT ======
+2026-07-15 13:20:08 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 1: mình là sinh viên đại học bách khoa hà nội
+Speaker 2: mình là sinh viên trường nào vậy
+
+2026-07-15 13:20:08 | [TOTAL PIPELINE] Latency: 30.8800s | RAM: 894.91 MB
+2026-07-15 13:21:42 | 
+========================================
+2026-07-15 13:21:42 | BẮT ĐẦU CHẠY PIPELINE
+2026-07-15 13:21:42 | ========================================
+2026-07-15 13:21:46 | [1. Denoise Audio] Latency: 4.1786s | RAM: 969.31 MB
+2026-07-15 13:21:47 | [2. VAD Split] Latency: 0.8884s | RAM: 969.31 MB
+2026-07-15 13:21:47 | 
+--- Segment 1 ---
+2026-07-15 13:21:53 | [  ASR] Latency: 5.6925s | RAM: 969.25 MB
+2026-07-15 13:21:53 |   ASR Text: cho mình hỏi bạn là sinh viên trường nào vậy
+2026-07-15 13:21:54 | [  Speaker Embedding] Latency: 0.6883s | RAM: 975.63 MB
+2026-07-15 13:21:54 | 
+--- Segment 2 ---
+2026-07-15 13:21:59 | [  ASR] Latency: 5.1250s | RAM: 975.70 MB
+2026-07-15 13:21:59 |   ASR Text: mình là sinh viên đại học bách khoa hà nội
+2026-07-15 13:22:00 | [  Speaker Embedding] Latency: 0.7777s | RAM: 975.73 MB
+2026-07-15 13:22:00 | 
+--- Finalizing ---
+2026-07-15 13:22:00 | [3. Diarization] Latency: 0.0036s | RAM: 975.73 MB
+2026-07-15 13:22:00 | 
+====== FINAL TEXT ======
+2026-07-15 13:22:00 | 
+Speaker 1: cho mình hỏi bạn là sinh viên trường nào vậy
+Speaker 2: mình là sinh viên đại học bách khoa hà nội
+
+2026-07-15 13:22:00 | [TOTAL PIPELINE] Latency: 17.3676s | RAM: 975.73 MB

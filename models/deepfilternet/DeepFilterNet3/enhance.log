@@ -1,0 +1,404 @@
+2026-07-11 09:00:19 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 09:00:19 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 09:00:19 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 09:00:19 | INFO     | DF | Using DeepFilterNet3 model at C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3
+2026-07-11 09:00:19 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 09:00:19 | INFO     | DF | Found checkpoint C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 09:00:19 | INFO     | DF | Running on device cpu
+2026-07-11 09:00:19 | INFO     | DF | Model loaded
+2026-07-11 09:05:51 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 09:05:51 | INFO     | DF | Using DeepFilterNet3 model at C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3
+2026-07-11 09:05:51 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 09:05:51 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 09:05:51 | INFO     | DF | Found checkpoint C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 09:05:51 | INFO     | DF | Running on device cpu
+2026-07-11 09:05:51 | INFO     | DF | Model loaded
+2026-07-11 09:08:32 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 09:08:32 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 09:08:33 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 09:08:33 | INFO     | DF | Using DeepFilterNet3 model at C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3
+2026-07-11 09:08:33 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 09:08:33 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 09:08:33 | INFO     | DF | Found checkpoint C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 09:08:33 | INFO     | DF | Running on device cpu
+2026-07-11 09:08:33 | INFO     | DF | Model loaded
+2026-07-11 09:36:36 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 09:36:36 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 09:36:36 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 09:36:36 | INFO     | DF | Using DeepFilterNet3 model at C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3
+2026-07-11 09:36:36 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 09:36:36 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 09:36:36 | INFO     | DF | Found checkpoint C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 09:36:36 | INFO     | DF | Running on device cpu
+2026-07-11 09:36:36 | INFO     | DF | Model loaded
+2026-07-11 11:36:22 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 11:36:22 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 11:36:22 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 11:36:22 | INFO     | DF | Using DeepFilterNet3 model at C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3
+2026-07-11 11:36:22 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 11:36:22 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 11:36:22 | INFO     | DF | Found checkpoint C:\Users\Admin\AppData\Local\DeepFilterNet\DeepFilterNet\Cache\DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 11:36:22 | INFO     | DF | Running on device cpu
+2026-07-11 11:36:22 | INFO     | DF | Model loaded
+2026-07-11 11:49:06 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 11:49:06 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 11:50:46 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 11:50:46 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 11:50:46 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 11:50:46 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 11:50:46 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 11:50:46 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 11:50:46 | INFO     | DF | Running on device cpu
+2026-07-11 11:50:46 | INFO     | DF | Model loaded
+2026-07-11 11:59:21 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 11:59:21 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 11:59:21 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 11:59:21 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 11:59:21 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 11:59:21 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 11:59:21 | INFO     | DF | Running on device cpu
+2026-07-11 11:59:21 | INFO     | DF | Model loaded
+2026-07-11 12:04:32 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 12:04:32 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 12:04:32 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 12:04:32 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 12:04:32 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 12:04:32 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 12:04:32 | INFO     | DF | Running on device cpu
+2026-07-11 12:04:32 | INFO     | DF | Model loaded
+2026-07-11 12:08:30 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 12:08:30 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 12:08:30 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 12:08:30 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 12:08:30 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 12:08:30 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 12:08:30 | INFO     | DF | Running on device cpu
+2026-07-11 12:08:30 | INFO     | DF | Model loaded
+2026-07-11 12:12:09 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 12:12:09 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 12:12:09 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 12:12:09 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 12:12:09 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 12:12:09 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 12:12:09 | INFO     | DF | Running on device cpu
+2026-07-11 12:12:09 | INFO     | DF | Model loaded
+2026-07-11 12:15:59 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 12:15:59 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 12:15:59 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 12:15:59 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 12:15:59 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 12:15:59 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 12:15:59 | INFO     | DF | Running on device cpu
+2026-07-11 12:15:59 | INFO     | DF | Model loaded
+2026-07-11 12:24:59 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 12:24:59 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 12:24:59 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 12:24:59 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 12:24:59 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 12:24:59 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 12:24:59 | INFO     | DF | Running on device cpu
+2026-07-11 12:24:59 | INFO     | DF | Model loaded
+2026-07-11 16:05:44 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 16:05:44 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 16:05:44 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 16:05:44 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 16:05:44 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 16:05:44 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 16:05:44 | INFO     | DF | Running on device cpu
+2026-07-11 16:05:44 | INFO     | DF | Model loaded
+2026-07-11 16:18:34 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 16:18:34 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 16:18:34 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 16:18:34 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 16:18:34 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 16:18:34 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 16:18:34 | INFO     | DF | Running on device cpu
+2026-07-11 16:18:34 | INFO     | DF | Model loaded
+2026-07-11 16:26:37 | INFO     | DF | Running on torch 2.5.1+cu121
+2026-07-11 16:26:37 | INFO     | DF | Running on host DESKTOP-V05QULB
+2026-07-11 16:26:37 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 16:26:37 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 16:26:37 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 16:26:37 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3\checkpoints\model_120.ckpt.best with epoch 120
+2026-07-11 16:26:37 | INFO     | DF | Running on device cpu
+2026-07-11 16:26:37 | INFO     | DF | Model loaded
+2026-07-11 23:23:13 | INFO     | DF | Running on torch 2.5.1
+2026-07-11 23:23:13 | INFO     | DF | Running on host adt-desktop
+2026-07-11 23:23:13 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 23:23:13 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 23:23:13 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 23:23:13 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-11 23:23:14 | INFO     | DF | Running on device cpu
+2026-07-11 23:23:14 | INFO     | DF | Model loaded
+2026-07-11 23:36:41 | INFO     | DF | Running on torch 2.5.1
+2026-07-11 23:36:41 | INFO     | DF | Running on host adt-desktop
+2026-07-11 23:36:41 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 23:36:42 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 23:36:42 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 23:36:42 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-11 23:36:42 | INFO     | DF | Running on device cpu
+2026-07-11 23:36:42 | INFO     | DF | Model loaded
+2026-07-11 23:37:17 | INFO     | DF | Running on torch 2.5.1
+2026-07-11 23:37:17 | INFO     | DF | Running on host adt-desktop
+2026-07-11 23:37:17 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 23:37:17 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 23:37:17 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 23:37:17 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-11 23:37:17 | INFO     | DF | Running on device cpu
+2026-07-11 23:37:17 | INFO     | DF | Model loaded
+2026-07-11 23:45:26 | INFO     | DF | Running on torch 2.5.1
+2026-07-11 23:45:26 | INFO     | DF | Running on host adt-desktop
+2026-07-11 23:45:26 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 23:45:26 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 23:45:26 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 23:45:26 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-11 23:45:26 | INFO     | DF | Running on device cpu
+2026-07-11 23:45:26 | INFO     | DF | Model loaded
+2026-07-11 23:46:22 | INFO     | DF | Running on torch 2.5.1
+2026-07-11 23:46:22 | INFO     | DF | Running on host adt-desktop
+2026-07-11 23:46:22 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 23:46:22 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 23:46:22 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 23:46:22 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-11 23:46:22 | INFO     | DF | Running on device cpu
+2026-07-11 23:46:22 | INFO     | DF | Model loaded
+2026-07-11 23:53:05 | INFO     | DF | Running on torch 2.5.1
+2026-07-11 23:53:05 | INFO     | DF | Running on host adt-desktop
+2026-07-11 23:53:05 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-11 23:53:05 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-11 23:53:05 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-11 23:53:05 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-11 23:53:05 | INFO     | DF | Running on device cpu
+2026-07-11 23:53:05 | INFO     | DF | Model loaded
+2026-07-12 00:12:50 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:12:50 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:12:50 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:12:50 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:12:50 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:12:51 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:12:51 | INFO     | DF | Running on device cpu
+2026-07-12 00:12:51 | INFO     | DF | Model loaded
+2026-07-12 00:14:19 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:14:19 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:14:19 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:14:19 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:14:19 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:14:19 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:14:20 | INFO     | DF | Running on device cpu
+2026-07-12 00:14:20 | INFO     | DF | Model loaded
+2026-07-12 00:22:51 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:22:51 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:22:52 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:22:52 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:22:52 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:22:52 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:22:52 | INFO     | DF | Running on device cpu
+2026-07-12 00:22:52 | INFO     | DF | Model loaded
+2026-07-12 00:38:17 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:38:17 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:38:17 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:38:17 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:38:17 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:38:17 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:38:18 | INFO     | DF | Running on device cpu
+2026-07-12 00:38:18 | INFO     | DF | Model loaded
+2026-07-12 00:43:07 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:43:07 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:43:08 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:43:08 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:43:08 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:43:08 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:43:08 | INFO     | DF | Running on device cpu
+2026-07-12 00:43:08 | INFO     | DF | Model loaded
+2026-07-12 00:50:31 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:50:31 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:50:31 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:50:31 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:50:31 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:50:31 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:50:31 | INFO     | DF | Running on device cpu
+2026-07-12 00:50:31 | INFO     | DF | Model loaded
+2026-07-12 00:56:49 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 00:56:49 | INFO     | DF | Running on host adt-desktop
+2026-07-12 00:56:49 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 00:56:49 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 00:56:49 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 00:56:49 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 00:56:49 | INFO     | DF | Running on device cpu
+2026-07-12 00:56:49 | INFO     | DF | Model loaded
+2026-07-12 01:00:49 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 01:00:49 | INFO     | DF | Running on host adt-desktop
+2026-07-12 01:00:49 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 01:00:49 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 01:00:49 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 01:00:49 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 01:00:49 | INFO     | DF | Running on device cpu
+2026-07-12 01:00:49 | INFO     | DF | Model loaded
+2026-07-12 21:48:53 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 21:48:53 | INFO     | DF | Running on host adt-desktop
+2026-07-12 21:48:53 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 21:48:53 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 21:48:53 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 21:48:53 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 21:48:53 | INFO     | DF | Running on device cpu
+2026-07-12 21:48:53 | INFO     | DF | Model loaded
+2026-07-12 21:58:17 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 21:58:17 | INFO     | DF | Running on host adt-desktop
+2026-07-12 21:58:17 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 21:58:17 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 21:58:17 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 21:58:17 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 21:58:18 | INFO     | DF | Running on device cpu
+2026-07-12 21:58:18 | INFO     | DF | Model loaded
+2026-07-12 22:02:13 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 22:02:13 | INFO     | DF | Running on host adt-desktop
+2026-07-12 22:02:13 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 22:02:13 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 22:02:13 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 22:02:13 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 22:02:13 | INFO     | DF | Running on device cpu
+2026-07-12 22:02:13 | INFO     | DF | Model loaded
+2026-07-12 22:36:18 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 22:36:18 | INFO     | DF | Running on host adt-desktop
+2026-07-12 22:36:18 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 22:36:18 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 22:36:18 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 22:36:18 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 22:36:18 | INFO     | DF | Running on device cpu
+2026-07-12 22:36:18 | INFO     | DF | Model loaded
+2026-07-12 23:08:53 | INFO     | DF | Running on torch 2.5.1
+2026-07-12 23:08:53 | INFO     | DF | Running on host adt-desktop
+2026-07-12 23:08:53 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-12 23:08:53 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-12 23:08:53 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-12 23:08:53 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-12 23:08:54 | INFO     | DF | Running on device cpu
+2026-07-12 23:08:54 | INFO     | DF | Model loaded
+2026-07-13 00:28:38 | INFO     | DF | Running on torch 2.5.1
+2026-07-13 00:28:38 | INFO     | DF | Running on host adt-desktop
+2026-07-13 00:28:38 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-13 00:28:38 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-13 00:28:38 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-13 00:28:39 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-13 00:28:39 | INFO     | DF | Running on device cpu
+2026-07-13 00:28:39 | INFO     | DF | Model loaded
+2026-07-13 00:30:34 | INFO     | DF | Running on torch 2.5.1
+2026-07-13 00:30:34 | INFO     | DF | Running on host adt-desktop
+2026-07-13 00:30:34 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-13 00:30:34 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-13 00:30:34 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-13 00:30:35 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-13 00:30:35 | INFO     | DF | Running on device cpu
+2026-07-13 00:30:35 | INFO     | DF | Model loaded
+2026-07-14 14:32:37 | INFO     | DF | Running on torch 2.5.1
+2026-07-14 14:32:37 | INFO     | DF | Running on host adt-desktop
+2026-07-14 14:32:37 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-14 14:32:37 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-14 14:32:37 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-14 14:32:38 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-14 14:32:38 | INFO     | DF | Running on device cpu
+2026-07-14 14:32:38 | INFO     | DF | Model loaded
+2026-07-14 18:19:18 | INFO     | DF | Running on torch 2.5.1
+2026-07-14 18:19:18 | INFO     | DF | Running on host adt-desktop
+2026-07-14 18:19:18 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-14 18:19:18 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-14 18:19:18 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-14 18:19:18 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-14 18:19:18 | INFO     | DF | Running on device cpu
+2026-07-14 18:19:18 | INFO     | DF | Model loaded
+2026-07-14 18:22:29 | INFO     | DF | Running on torch 2.5.1
+2026-07-14 18:22:29 | INFO     | DF | Running on host adt-desktop
+2026-07-14 18:22:29 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-14 18:22:29 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-14 18:22:29 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-14 18:22:29 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-14 18:22:29 | INFO     | DF | Running on device cpu
+2026-07-14 18:22:29 | INFO     | DF | Model loaded
+2026-07-15 08:39:06 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 08:39:06 | INFO     | DF | Running on host adt-desktop
+2026-07-15 08:39:06 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 08:39:06 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 08:39:06 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 08:39:06 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 08:39:07 | INFO     | DF | Running on device cpu
+2026-07-15 08:39:07 | INFO     | DF | Model loaded
+2026-07-15 08:47:03 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 08:47:03 | INFO     | DF | Running on host adt-desktop
+2026-07-15 08:47:04 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 08:47:04 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 08:47:04 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 08:47:04 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 08:47:04 | INFO     | DF | Running on device cpu
+2026-07-15 08:47:04 | INFO     | DF | Model loaded
+2026-07-15 08:52:58 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 08:52:58 | INFO     | DF | Running on host adt-desktop
+2026-07-15 08:52:58 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 08:52:58 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 08:52:58 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 08:52:59 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 08:52:59 | INFO     | DF | Running on device cpu
+2026-07-15 08:52:59 | INFO     | DF | Model loaded
+2026-07-15 09:30:55 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 09:30:55 | INFO     | DF | Running on host adt-desktop
+2026-07-15 09:30:55 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 09:30:55 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 09:30:55 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 09:30:55 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 09:30:55 | INFO     | DF | Running on device cpu
+2026-07-15 09:30:55 | INFO     | DF | Model loaded
+2026-07-15 11:09:31 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 11:09:31 | INFO     | DF | Running on host adt-desktop
+2026-07-15 11:09:31 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 11:09:31 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 11:09:31 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 11:09:31 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 11:09:31 | INFO     | DF | Running on device cpu
+2026-07-15 11:09:31 | INFO     | DF | Model loaded
+2026-07-15 11:17:13 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 11:17:13 | INFO     | DF | Running on host adt-desktop
+2026-07-15 11:17:13 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 11:17:13 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 11:17:13 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 11:17:13 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 11:17:13 | INFO     | DF | Running on device cpu
+2026-07-15 11:17:13 | INFO     | DF | Model loaded
+2026-07-15 11:35:40 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 11:35:40 | INFO     | DF | Running on host adt-desktop
+2026-07-15 11:35:40 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 11:35:40 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 11:35:40 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 11:35:40 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 11:35:40 | INFO     | DF | Running on device cpu
+2026-07-15 11:35:40 | INFO     | DF | Model loaded
+2026-07-15 11:40:31 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 11:40:31 | INFO     | DF | Running on host adt-desktop
+2026-07-15 11:40:31 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 11:40:31 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 11:40:31 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 11:40:31 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 11:40:31 | INFO     | DF | Running on device cpu
+2026-07-15 11:40:31 | INFO     | DF | Model loaded
+2026-07-15 11:50:18 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 11:50:18 | INFO     | DF | Running on host adt-desktop
+2026-07-15 11:50:18 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 11:50:18 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 11:50:18 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 11:50:19 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 11:50:19 | INFO     | DF | Running on device cpu
+2026-07-15 11:50:19 | INFO     | DF | Model loaded
+2026-07-15 12:14:21 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 12:14:21 | INFO     | DF | Running on host adt-desktop
+2026-07-15 12:14:21 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 12:14:21 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 12:14:21 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 12:14:21 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 12:14:21 | INFO     | DF | Running on device cpu
+2026-07-15 12:14:21 | INFO     | DF | Model loaded
+2026-07-15 13:07:06 | INFO     | DF | Running on torch 2.5.1
+2026-07-15 13:07:06 | INFO     | DF | Running on host adt-desktop
+2026-07-15 13:07:06 | INFO     | DF | Loading model settings of DeepFilterNet3
+2026-07-15 13:07:06 | INFO     | DF | Running with post-filter (beta: 0.02)
+2026-07-15 13:07:06 | INFO     | DF | Initializing model `deepfilternet3`
+2026-07-15 13:07:06 | INFO     | DF | Found checkpoint models/deepfilternet/DeepFilterNet3/checkpoints/model_120.ckpt.best with epoch 120
+2026-07-15 13:07:06 | INFO     | DF | Running on device cpu
+2026-07-15 13:07:06 | INFO     | DF | Model loaded
